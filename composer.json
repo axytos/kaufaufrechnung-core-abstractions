@@ -1,0 +1,20 @@
+{
+    "name": "axytos/kaufaufrechnung-core-abstractions",
+    "authors": [
+        {
+            "name": "axytos GmbH",
+            "email": "info@axytos.com",
+            "homepage": "https://www.axytos.com"
+        }
+    ],
+    "license": "proprietary",
+    "type": "library",
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Axytos\\KaufAufRechnung\\Core\\Abstractions\\": "src/"
+        }
+    }
+}
