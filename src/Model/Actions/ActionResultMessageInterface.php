@@ -2,9 +2,7 @@
 
 namespace Axytos\KaufAufRechnung\Core\Abstractions\Model\Actions;
 
-use JsonSerializable;
-
-interface ActionResultMessageInterface extends JsonSerializable
+interface ActionResultMessageInterface extends \JsonSerializable
 {
     /**
      * @return string
