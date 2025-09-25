@@ -5,11 +5,10 @@ namespace Axytos\KaufAufRechnung\Core\Abstractions\Model;
 interface AxytosOrderInterface
 {
     /**
-     * @param string $eventName
+     * @param string   $eventName
+     * @param callable $eventListener
      *
      * @phpstan-param \Axytos\KaufAufRechnung\Core\Abstractions\Model\AxytosOrderEvents::* $eventName
-     *
-     * @param callable $eventListener
      *
      * @return void
      */
@@ -26,9 +25,11 @@ interface AxytosOrderInterface
     public function getOrderCheckoutAction();
 
     /**
+     * @param bool $skipPrecheck
+     *
      * @return void
      */
-    public function checkout();
+    public function checkout($skipPrecheck);
 
     // ========================================================
     // sync
